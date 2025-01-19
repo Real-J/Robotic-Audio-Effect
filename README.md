@@ -71,7 +71,7 @@ sudo apt install ffmpeg
 
 ## Example
 
-Input: `input_audio.mp4`  
+Input: `orginal.mp4`  
 Output: `robotic_audio.mp4`
 
 ## How It Works
