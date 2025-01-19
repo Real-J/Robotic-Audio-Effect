@@ -35,7 +35,7 @@ sudo apt install ffmpeg
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/yourusername/robotic-audio-effect.git
+   git clone https://github.com/Real-J/robotic-audio-effect.git
    cd robotic-audio-effect
    ```
 
