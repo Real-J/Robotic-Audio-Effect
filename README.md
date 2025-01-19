@@ -50,7 +50,7 @@ sudo apt install ffmpeg
 4. Specify the input and output file paths in the script or modify the following lines to point to your desired files:
 
    ```python
-   input_file = "your_audio_file.mp4"
+   input_file = "orginal.mp4"
    output_file = "robotic_audio.mp4"
    ```
 
