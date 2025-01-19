@@ -6,6 +6,7 @@ This repository contains a Python script to apply a robotic effect to audio file
 - Applies a robotic modulation effect to audio files.
 - Supports `.mp4` audio input and output.
 - Utilizes `pydub` for audio processing and `numpy` for numerical computations.
+- Includes functionality to play the resulting audio file.
 
 ## Requirements
 
@@ -16,11 +17,12 @@ Before running the script, ensure you have the following dependencies installed:
 - `numpy`
 - `scipy`
 - `ffmpeg` or `libav` (required by `pydub` for handling `.mp4` files)
+- `simpleaudio` (for playing audio)
 
 Install the required Python packages using pip:
 
 ```bash
-pip install pydub numpy scipy
+pip install pydub numpy scipy simpleaudio
 ```
 
 Make sure `ffmpeg` or `libav` is installed on your system. For example, on Ubuntu:
@@ -35,7 +37,7 @@ sudo apt install ffmpeg
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/Real-J/robotic-audio-effect.git
+   git clone https://github.com/yourusername/robotic-audio-effect.git
    cd robotic-audio-effect
    ```
 
@@ -56,9 +58,20 @@ sudo apt install ffmpeg
 
 5. The output audio file with the robotic effect will be saved in the specified location.
 
+6. Play the resulting audio file directly from the script by adding the following code snippet at the end of the script:
+
+   ```python
+   import simpleaudio as sa
+
+   # Play the resulting audio file
+   wave_obj = sa.WaveObject.from_wave_file(output_file)
+   play_obj = wave_obj.play()
+   play_obj.wait_done()
+   ```
+
 ## Example
 
-Input: `orginal.mp4`  
+Input: `input_audio.mp4`  
 Output: `robotic_audio.mp4`
 
 ## How It Works
@@ -69,6 +82,7 @@ The script applies a robotic effect by:
 3. Modulating the audio signal with a sine wave of a specified frequency.
 4. Normalizing the audio to ensure the output is within a valid range.
 5. Exporting the processed audio as an `.mp4` file.
+6. Playing the resulting audio using `simpleaudio`.
 
 ## Customization
 
@@ -96,4 +110,5 @@ Developed by [Your Name](https://github.com/yourusername).
 - [pydub documentation](https://pydub.com/)
 - [numpy documentation](https://numpy.org/)
 - [ffmpeg documentation](https://ffmpeg.org/)
+- [simpleaudio documentation](https://simpleaudio.readthedocs.io/)
 
