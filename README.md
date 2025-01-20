@@ -37,11 +37,11 @@ sudo apt install ffmpeg
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/yourusername/robotic-audio-effect.git
+   git clone https://github.com/Real-J/robotic-audio-effect.git
    cd robotic-audio-effect
    ```
 
-2. Place your input audio file (in `orginal.mp4` format) in the same directory as the script.
+2. Place your input audio file (in `.mp4` format) in the same directory as the script.
 
 3. Run the script with the following command:
 
