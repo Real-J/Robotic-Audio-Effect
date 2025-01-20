@@ -46,7 +46,7 @@ sudo apt install ffmpeg
 3. Run the script with the following command:
 
    ```bash
-   python robotic_effect.py
+   python robo_audio.py
    ```
 
 4. Specify the input and output file paths in the script or modify the following lines to point to your desired files:
