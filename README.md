@@ -41,7 +41,7 @@ sudo apt install ffmpeg
    cd robotic-audio-effect
    ```
 
-2. Place your input audio file (in `.mp4` format) in the same directory as the script.
+2. Place your input audio file (in `orginal.mp4` format) in the same directory as the script.
 
 3. Run the script with the following command:
 
@@ -101,9 +101,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 Feel free to fork the repository, create a branch, and submit a pull request if you have ideas for improvements or new features.
 
-## Author
-
-Developed by [Your Name](https://github.com/yourusername).
 
 ## Acknowledgments
 
